@@ -40,7 +40,7 @@ const config = getClientConfig();
 export const DEFAULT_CONFIG = {
   lastUpdate: Date.now(), // timestamp, to merge state
 
-  submitKey: SubmitKey.Enter,
+  submitKey: SubmitKey.CtrlEnter,
   avatar: "1f603",
   fontSize: 14,
   fontFamily: "",
@@ -61,7 +61,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-4o-mini" as ModelType,
+    model: "gpt-4" as ModelType,
     providerName: "OpenAI" as ServiceProvider,
     temperature: 0.5,
     top_p: 1,
